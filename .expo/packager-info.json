@@ -1,0 +1,9 @@
+{
+  "packagerPort": 19001,
+  "packagerPid": 31408,
+  "expoServerNgrokUrl": "https://uy-aux.dmun1009.workshop.exp.direct",
+  "packagerNgrokUrl": "https://packager.uy-aux.dmun1009.workshop.exp.direct",
+  "ngrokPid": 4580,
+  "devToolsPort": 19002,
+  "expoServerPort": 19000
+}
