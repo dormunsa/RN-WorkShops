@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View , Alert } from "react-native";
+import { View, Alert } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import OrientationLoadingOverlay from "react-native-orientation-loading-overlay";
 

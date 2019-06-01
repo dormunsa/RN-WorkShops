@@ -16,7 +16,7 @@ const AppNavigator = createStackNavigator({
   Gyroscope: { screen: GyroscopeScreen },
   DragDrop: { screen: DragDrop },
   LongPress: { screen: LongPress },
-  Swipe: { screen: Swipe },
+  Swipe: { screen: Swipe }
 });
 
 export default createAppContainer(AppNavigator);

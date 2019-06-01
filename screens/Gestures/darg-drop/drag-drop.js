@@ -25,7 +25,14 @@ export class DragDrop extends Component {
   render() {
     return (
       <View>
-         <Draggable reverse={false} renderSize={56} renderColor='black' offsetX={0} offsetY={0} renderText='Drag Me'/> 
+        <Draggable
+          reverse={false}
+          renderSize={56}
+          renderColor="black"
+          offsetX={0}
+          offsetY={0}
+          renderText="Drag Me"
+        />
       </View>
     );
   }
