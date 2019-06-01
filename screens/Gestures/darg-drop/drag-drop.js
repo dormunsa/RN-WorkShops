@@ -7,7 +7,7 @@ export class DragDrop extends Component {
     super(props);
   }
 
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Drag & Drop",
     headerTitleStyle: {
       fontSize: 28,

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View , Alert } from "react-native";
 import MapView, { Marker } from "react-native-maps";
 import OrientationLoadingOverlay from "react-native-orientation-loading-overlay";
 
@@ -12,7 +12,7 @@ export class GeoLocationScreen extends Component {
     };
     this.getPostion();
   }
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Geo Location",
     headerTitleStyle: {
       fontSize: 28,
@@ -30,7 +30,6 @@ export class GeoLocationScreen extends Component {
   getPostion() {
     navigator.geolocation.getCurrentPosition(
       position => {
-        console.log(position);
         this.setState({
           location: position
         });
@@ -40,7 +39,6 @@ export class GeoLocationScreen extends Component {
     );
   }
   render() {
-    console.log(this.state);
     if (!this.state.location) {
       return (
         <View>

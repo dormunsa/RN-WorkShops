@@ -11,7 +11,7 @@ export class AccelerometerScreen extends Component {
     this.round = this.round.bind(this);
   }
 
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Accelerometer",
     headerTitleStyle: {
       fontSize: 28,

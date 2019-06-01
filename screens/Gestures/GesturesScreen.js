@@ -5,6 +5,7 @@ import {
   StyleSheet,
   ImageBackground,TouchableOpacity,FlatList
 } from "react-native";
+import PropTypes from 'prop-types';
 export  class GesturesScreen extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ export  class GesturesScreen extends Component {
     this.renderGridStlyePic = this.renderGridStlyePic.bind(this);
   }
 
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Gestures",
     headerTitleStyle: {
       fontSize: 28,
@@ -85,6 +86,9 @@ render() {
     )
   }
 }
+GesturesScreen.propTypes = {
+  navigation: PropTypes.object.isRequired,
+};
 
 const styles = StyleSheet.create({
   container: {

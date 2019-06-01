@@ -8,7 +8,7 @@ import {
 } from "react-native";
 
 export default class Touchables extends Component {
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Long Press",
     headerTitleStyle: {
       fontSize: 28,

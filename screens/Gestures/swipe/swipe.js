@@ -18,7 +18,7 @@ export class Swipe extends Component {
       SwipeLeftImage: require("../../../assets/image4.png")
     };
   }
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Swipe",
     headerTitleStyle: {
       fontSize: 28,
@@ -33,7 +33,7 @@ export class Swipe extends Component {
     }
   });
 
-  onSwipe(gestureName, gestureState) {
+  onSwipe(gestureName) {
     const { SWIPE_UP, SWIPE_DOWN, SWIPE_LEFT, SWIPE_RIGHT } = swipeDirections;
     this.setState({ gestureName: gestureName });
     switch (gestureName) {

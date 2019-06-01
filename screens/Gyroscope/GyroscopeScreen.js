@@ -11,7 +11,7 @@ export class GyroscopeScreen extends Component {
     this.round = this.round.bind(this);
   }
 
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Gyroscope",
     headerTitleStyle: {
       fontSize: 28,
