@@ -5,6 +5,7 @@ import {
   StyleSheet,
   ImageBackground,TouchableOpacity,FlatList
 } from "react-native";
+import PropTypes from 'prop-types';
 export class HomeLayout extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ export class HomeLayout extends Component {
     this.renderGridStlyePic = this.renderGridStlyePic.bind(this);
   }
 
-  static navigationOptions = ({ navigation }) => ({
+  static navigationOptions = () => ({
     title: "Home Screen",
     headerTitleStyle: {
       fontSize: 28,
@@ -64,6 +65,9 @@ render() {
     )
   }
 }
+HomeLayout.propTypes = {
+  navigation: PropTypes.object.isRequired,
+};
 const styles = StyleSheet.create({
   container: {
     flex: 1,
