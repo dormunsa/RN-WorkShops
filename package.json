@@ -24,5 +24,18 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0"
   },
-  "private": true
+  "private": true,
+  "checkSubmission": {
+    "ex": 3,
+    "students": [
+        {"id": "204325229", "fullName": "Dor Munsa", "email": "dmun1009@gmail.com"},
+        {"id": "311251425", "fullName": "Sahar Gezer", "email": "sahar.gezer@gmail.com"}
+    ],
+    "os": "Windows", 
+    "device": "Android", 
+    "deliveryDate": "06/02/2019", 
+    "delay": false,
+    "delayReason": "", 
+    "comments": "" 
+}
 }
